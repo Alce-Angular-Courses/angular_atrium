@@ -1,0 +1,26 @@
+<h3>Tareas</h3>
+<div class="form-group">
+  <input type="text" class="form-control" 
+  name="tarea" id="tarea"  placeholder="Nueva Tarea"
+  [(ngModel)]="tarea.nombre">
+</div>
+<div>
+  <button type="button" class="btn btn-primary"
+    (click)="addTarea()">Guardar</button>
+</div>
+<div *ngIf="aTareas.length">
+  <h4>Lista de tareas</h4>
+  <ul class="list-group">
+    <li *ngFor="let item of aTareas; let i = index"
+    class="list-group-item">
+      <input type="checkbox" class="form-check-input" 
+      name="isCompleted" id="isCompleted"
+      [(ngModel)]="item.isCompleted">
+      {{ item.nombre }}
+      <button type="button" class="btn btn-danger btn-sm"
+      (click)="borrarTarea(i)"
+      >Borrar</button>
+    </li>
+  </ul>
+</div>
+
