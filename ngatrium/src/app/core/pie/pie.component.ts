@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'iam-pie',
-  template: `
-    <footer>
-       {{ empresa }} - {{ lugar }}
-    </footer>
-  `,
-  styles: []
+  templateUrl: './pie.component.html',
+  styles: ['footer {border-top: 1px solid}',]
 })
 export class PieComponent implements OnInit {
 
