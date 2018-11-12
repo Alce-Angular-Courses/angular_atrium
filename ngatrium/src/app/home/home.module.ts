@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SaludoComponent } from './saludo/saludo.component';
 import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SaludoLocalComponent } from './saludo-local/saludo-local.component';
     SaludoLocalComponent],
   imports: [
     CommonModule,
+    FormsModule,
     HomeRoutingModule
   ]
 })

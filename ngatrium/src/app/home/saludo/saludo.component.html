@@ -5,11 +5,15 @@
   <div class="card-body">
     <div class="form-group">
       <label for="name">Nombre</label>
-      <input type="text" class="form-control" name="name" id="name" placeholder="Escribe tu nombre">
+      <input type="text"
+        class="form-control" name="name" id="name" 
+        placeholder="Escribe tu nombre"
+        [(ngModel)] = "nombre">
     </div>
-    <button type="button" class="btn btn-primary">Borrar</button>
+    <button type="button" class="btn btn-primary"
+      (click)="btnBorrar()">Borrar</button>
   </div>
   <div class="card-footer text-muted">
-    Hola
+    Hola {{ nombre }}
   </div>
 </div>

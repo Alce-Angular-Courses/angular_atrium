@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saludo.component.css']
 })
 export class SaludoComponent implements OnInit {
-
+  nombre: string
   constructor() { }
 
   ngOnInit() {
+    this.nombre = 'Pepe'
+  }
+
+  btnBorrar ()  {
+    this.nombre = ''
   }
 
 }
