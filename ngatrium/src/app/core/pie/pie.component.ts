@@ -9,12 +9,14 @@ export class PieComponent implements OnInit {
 
   lugar: string
   empresa: string
+  fecha: Date
 
   constructor() { }
 
   ngOnInit() {
     this.lugar = 'Madrid'
     this.empresa = 'ATRIUM'
+    this.fecha = new Date()
   }
 
 }

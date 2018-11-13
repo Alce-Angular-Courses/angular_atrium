@@ -6,6 +6,12 @@ import { CoreModule } from './core/core.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+
+// the second parameter 'es' is optional
+registerLocaleData(localeEs, 'es');
+
 @NgModule({
   declarations: [
     AppComponent

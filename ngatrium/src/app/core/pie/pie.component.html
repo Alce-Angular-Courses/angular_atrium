@@ -1,7 +1,12 @@
 <div class="container">
     <div class="row">
         <footer class="col text-center">
-            {{ empresa }} - {{ lugar }}
+            <p>
+                {{ empresa }} - {{ lugar }}
+            </p>
+            <p>
+                {{ fecha | date : 'fullDate' : '' : 'es' | titlecase}}
+            </p>
         </footer>
     </div>
 </div>
