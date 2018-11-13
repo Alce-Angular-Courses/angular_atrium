@@ -1,0 +1,15 @@
+<h3>Tareas por componentes</h3>
+<iam-nueva-tarea (onTarea)="addTarea($event)"></iam-nueva-tarea>
+
+<div *ngIf="aTareas.length">
+  <h4>Lista de tareas</h4>
+  <ul class="list-group">
+    <li *ngFor="let item of aTareas; let i = index"
+    class="list-group-item justify-content-between">
+      <iam-tarea [tarea]="item" [num]="i" 
+      (onDelete)="deleteTarea($event)"></iam-tarea>
+    </li>
+  </ul>
+</div>
+
+

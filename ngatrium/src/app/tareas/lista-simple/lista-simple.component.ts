@@ -25,7 +25,8 @@ export class ListaSimpleComponent implements OnInit {
   }
 
   borrarTarea(id) {
-    this.aTareas.splice(id,1)
+    let result = window.confirm("Estas seguro")
+    if (result) {this.aTareas.splice(id,1)}
   }
 
 }
