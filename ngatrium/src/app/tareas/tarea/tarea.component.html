@@ -1,11 +1,14 @@
 <div class="row">
-    <input type="checkbox" class="form-check-input" 
-    name="isCompleted" id="isCompleted"
-    [(ngModel)]="tarea.isCompleted">
-    {{ tarea.nombre }}
-    <button type="button" class="btn btn-danger btn-sm"
-    (click)="sendBorrarTarea()"
-    >Borrar</button>
+    <div class="col">
+        <input type="checkbox" class="form-check-input" 
+        name="isCompleted" id="isCompleted"
+        [(ngModel)]="tarea.isCompleted">
+        {{ tarea.nombre }}
+        <button type="button" class="btn btn-danger btn-sm"
+        (click)="sendBorrarTarea()"
+        >Borrar</button>
+    </div>
 </div>
+
 
 
