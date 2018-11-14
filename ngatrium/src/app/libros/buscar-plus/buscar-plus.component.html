@@ -1,0 +1,23 @@
+<h4>Buscar usando un servicio</h4>
+<div class="form-group">
+    <label for="clave">Palabra clave</label>
+    <input type="text" class="form-control" 
+    name="clave" id="clave" placeholder=""
+    [(ngModel)]="clave">
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary"
+      (click)="onBuscar()">
+      Buscar
+    </button>
+  </div>
+  <div *ngIf="aLibros.length">
+    <h4>Resultados</h4>
+    <ul class="list-group">
+      <li class="list-group-item" 
+      *ngFor="let item of aLibros">
+        {{item}}
+      </li>
+    </ul>
+  </div>
+  
