@@ -7,7 +7,8 @@ import { Contacto, Grupo } from 'src/app/models/contacto.model';
   styleUrls: ['./form-td.component.css']
 })
 export class FormTdComponent implements OnInit {
-  @ViewChild('form') form: any
+
+  @ViewChild('myform') form: any
   contacto: Contacto
   aGrupos: Array<Grupo>
 
@@ -46,4 +47,7 @@ export class FormTdComponent implements OnInit {
     console.log(this.form)
   }
 
+  enviarDatos() {
+    console.log("Datos enviados")
+  }
 }
